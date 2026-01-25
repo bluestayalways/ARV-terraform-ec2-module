@@ -1,5 +1,6 @@
 provider "aws" {
   region = "ap-south-1"
+  profile = "ARV"
 }
 
 resource "aws_instance" "ARVEC2" {
