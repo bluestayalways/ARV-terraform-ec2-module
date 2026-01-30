@@ -5,3 +5,6 @@ resource "aws_instance" "ARVEC2" {
 
 variable "ami" {}
 variable "instance_type" {}
+
+output "instance_id" {
+  value = aws_instance.ARVEC2.id
