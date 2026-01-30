@@ -1,5 +1,4 @@
-
 resource "aws_instance" "ARVEC2" {
-    ami = "ami-0ae0093476c7a1da6"
-    instance_type = "t3.micro"
+    ami = var.ami
+    instance_type = var.instance_type
 }
